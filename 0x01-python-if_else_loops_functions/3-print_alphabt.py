@@ -2,6 +2,5 @@
 """print the alphabet in lowercase except for q and e"""
 
 for letter in range(97, 123):
-    if letter == 101 or letter == 113:
-        continue
-    print("{}".format(chr(letter)), end="")
+    if chr(letter) != 'q' and chr(letter) != 'e':
+        print("{}".format(chr(letter)), end="")
