@@ -1,2 +1,9 @@
 #!/bin/bash
-python3 -c "import py_compile; py_compile.compile('$PYFILE', '$PYFILE' + 'c')"
+if [ -z "$PYFILE" ]; then
+	exit 1
+fi
+if [! -f "$PYFILE" ]; then
+	exit 1
+fi
+
+python3 -c "import py_compile; py_compile.compile('$PYFILE', cfile='${PYFILE}c')"
