@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""print the alphabet in lowercase except for q and e"""
+# Author - Berehan Felegehewot
+
+"""print alphabet except for q and e """
 
 for letter in range(97, 123):
     if chr(letter) != 'q' and chr(letter) != 'e':
