@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-# Author - Berehan Felegehewot
-
-"""print alphabet except for q and e """
-
-for i in range(97, 123):
-    if i != 101 and i != 113:
+for i in range(97,123):
+    if chr(i) != 'q' and chr(i) != 'e':
         print("{:c}".format(i), end="")
