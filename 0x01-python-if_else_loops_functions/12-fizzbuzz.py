@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    """prints the numbers 1 to 100 separated by space"""
-    for i in range(1, 101):
+    for i in range(1,101):
         if i % 3 == 0 and i % 5 == 0:
-            print('FizzBuzz', end=" ")
+            print("fizzbuzz", end=" ")
         elif i % 3 == 0:
-            print('Fizz', end=" ")
+            print("fizz", end=" ")
         elif i % 5 == 0:
-            print("Buzz", end=" ")
+            print("buzz", end=" ")
         else:
-            print("{:d}".format(i), end=" ")
+            print(i, end=" ")
